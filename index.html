@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">Khan.</a>
+
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="/AboutMe/aboutme.html">About</a>
+        <a href="/Services/services.html">Services</a>
+        <a href="/Portfolio/portfolio.html">Portfolio</a>
+        <a href="/Contact/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi, I'm Khan</h1>
+        <h3>Full-stack Developer</h3>
+        <p>
+          Hi! I'm a full-stack developer passionate about building user-centered
+          web applications. From frontend to backend and deployment, I have
+          hands-on experience across the entire development process. I work
+          mainly with technologies like React, Node.js, TypeScript, and
+          PostgreSQL, focusing on creating efficient and scalable solutions. I
+          thrive on solving problems and quickly understanding user needs. I
+          believe that clean code leads to great user experiences, and I value
+          collaboration and continuous growth as a developer.
+        </p>
+        <div class="btn-box">
+          <a href="HirMe/hireme.html">Hire me</a>
+          <a href="#">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="home-sci">...</div>
+      <span class="home-imgHover"></span>
+
+      <div class="home-sci">
+        <a href="https://github.com/jstrt" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.instagram.com/khan.strt/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/daegyo-jung-477176292/"
+          target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+      </div>
+
+      <div class="globe-wrapper">
+        <div id="globe-container"></div>
+      
+        <script src="https://unpkg.com/globe.gl"></script>
+        <script>
+          const arcs = [
+  {
+    startLat: 37.7749, startLng: -122.4194,  // San Francisco
+    endLat: 51.5074, endLng: -0.1278         // London
+  },
+  {
+    startLat: 35.6895, startLng: 139.6917,   // Tokyo
+    endLat: 40.7128, endLng: -74.0060        // New York
+  }
+];
+          const cities = [
+            { lat: 37.7749, lng: -122.4194, pop: 0.8 },
+            { lat: 51.5074, lng: -0.1278, pop: 0.7 },
+            { lat: 35.6895, lng: 139.6917, pop: 1.0 }
+          ];
+      
+          const world = Globe()
+  .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+  .arcsData(arcs)
+  .arcColor(() => '#00abf0')
+  .arcAltitude(0.2)
+  .arcStroke(0.5)
+  .arcDashLength(0.4)
+  .arcDashGap(2)
+  .arcDashInitialGap(() => Math.random() * 5)
+  .arcDashAnimateTime(4000)
+  .pointsData(cities)
+  .pointAltitude('pop')
+  .pointColor(() => 'rgba(255,255,255,0.5)') // ✅ 부드러운 회색빛 포인트
+  .pointRadius(0.1)
+  .backgroundColor('rgba(0,0,0,0)');
+      
+          world(document.getElementById('globe-container'));
+          world.controls().autoRotate = true;
+          world.controls().autoRotateSpeed = 0.3;
+          world.pointOfView({ lat: 20, lng: 0, altitude: 2.5 });
+        </script>
+  </body>
+</html>

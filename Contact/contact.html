@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">Khan.</a>
+        <nav class="navbar">
+          <a href="../index.html">Home</a>
+          <a href="/AboutMe/aboutme.html">About</a>
+          <a href="/Services/services.html">Services</a>
+          <a href="/Portfolio/portfolio.html">Portfolio</a>
+          <a href="/Contact/contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+      <div class="header-box"></div>
+    </header>
+
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <p>Have a project or idea? Let's build something amazing together!</p>
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/yourFormID"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p><i class="bx bx-envelope"></i> a77281912@email.com</p>
+        <p><i class="bx bx-phone"></i> +82 10-7728-1912</p>
+        <p><i class="bx bx-location-plus"></i> Seoul, South Korea</p>
+      </div>
+    </section>
+    <div class="social-icons">
+      <a href="https://github.com/jstrt" target="_blank"
+        ><i class="bx bxl-github"></i
+      ></a>
+      <a href="https://www.instagram.com/khan.strt/" target="_blank"
+        ><i class="bx bxl-instagram"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/daegyo-jung-477176292/"
+        target="_blank"
+        ><i class="bx bxl-linkedin"></i
+      ></a>
+    </div>
+  </body>
+</html>

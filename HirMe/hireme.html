@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="hireme.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <a href="../index.html" class="logo">Khan.</a>
+
+        <nav class="navbar">
+          <a href="../index.html">Home</a>
+          <a href="/AboutMe/aboutme.html">About</a>
+          <a href="/Services/services.html">Services</a>
+          <a href="/Portfolio/portfolio.html">Portfolio</a>
+          <a href="/Contact/contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div class="header-box"></div>
+    </header>
+
+    <section class="hire-me">
+      <div class="form-container">
+        <h2>Hire Me</h2>
+        <p>
+          If you're interested in working together, feel free to send me a
+          message!
+        </p>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
