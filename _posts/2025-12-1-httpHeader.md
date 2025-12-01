@@ -227,6 +227,18 @@ server.listen(port, hostname, () => {
 });
 </pre>
 
+<img 
+  src="/assets/img/12-1-1.png"
+  alt="12-1-1"
+  style="max-width:100%; margin:20px auto; display:block;">
+
+  <img 
+  src="/assets/img/12-1-2.png"
+  alt="12-1-2"
+  style="max-width:100%; margin:20px auto; display:block;">
+
+
+
 <p>
 HTTP Header는 매우 유연하게 설계되어 있어 커스텀 헤더를 생성할 수 있습니다.<br>
 하지만 실제 서비스 환경에서는 표준 헤더를 사용하는 것이 일반적입니다.
