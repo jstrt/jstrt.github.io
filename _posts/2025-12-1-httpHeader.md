@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTTP Header"
-date: 2025-11-28 21:00:00 +0900
+date: 2025-12-01 20:00:00 +0900
 ---
 
 <div style="
