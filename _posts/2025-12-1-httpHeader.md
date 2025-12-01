@@ -5,7 +5,7 @@ date: 2025-12-01 20:00:00 +0900
 ---
 
 <div style="
-  text-align: center;
+  text-align: left;
   margin: 4rem auto;
   padding: 2.5rem;
   max-width: 800px;
