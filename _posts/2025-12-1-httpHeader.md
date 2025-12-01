@@ -33,7 +33,14 @@ HTTP 통신에서 헤더는 요청(Request)과 응답(Response)에 포함되어 
 HTTP 요청은 크게 <strong>요청 라인(Request Line)</strong>과 <strong>헤더 영역</strong>으로 구성됩니다.
 </p>
 
-<pre style="text-align:left;">
+<pre style="text-align:left;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background-color: #111;
+  color: #eee;">
 GET /login HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0 ...
